@@ -31,9 +31,15 @@ class Game:
         input_field.config(text="")
         self.word, index = self.read_the_word_from_csv()
         print("Playing......")
-        speech = gTTS(text=self.word, lang='en', slow=False)
-        speech.save("voice.mp3")
-        playsound.playsound("voice.mp3")
+        try:
+            speech = gTTS(text=self.word, lang='en', slow=False)
+            speech.save("voice.mp3")
+        except:
+            raise Exception("Error: Text to Speech")
+        try:
+            playsound.playsound("voice.mp3")
+        except:
+            raise Exception("Error: Playing")
 
     def replay(self):
         mixer.init()
