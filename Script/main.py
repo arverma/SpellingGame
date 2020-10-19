@@ -1,11 +1,11 @@
-from utils import *
+from Script.utils import *
 import pyttsx3
 import json
 import pandas as pd
 pd.options.mode.chained_assignment = None
 
-words_file_name = "/Users/aman/Documents/SpellingB/words.csv"
-dict_file_name = "/Users/aman/Documents/SpellingB/dictionary.json"
+words_file_name = "../Data/words.csv"
+dict_file_name = "../Data/dictionary.json"
 
 
 def main(word_data, dictionary_data, speech_engine):
