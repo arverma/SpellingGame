@@ -1,5 +1,5 @@
 # SpellingGame
-This is a Spelling Game built to practice spelling. It is built using Python and is available to run with without GUI.  
+This game is intended to practice spelling. It is built on Python3 and is available to run with and without GUI.  
 
 ![SpellngGame UI](Image/gui.png)
 
