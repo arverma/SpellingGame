@@ -1,3 +1,6 @@
+RULES = "1. Click <PlayNext> to start the game\n2. Enter the word in the input\n3. Click <Check> for " \
+            "result\n4. Click <Replay> to reply\n5. Click <meaning> to get the word's definition"
+
 
 def input_frame(root, tk, cmd):
     frame_top = tk.Frame(root, bg='#22e5d5')
@@ -18,10 +21,7 @@ def input_frame(root, tk, cmd):
     frame_bottum = tk.Frame(root, bg='#8cfff1')
     frame_bottum.place(relx=0, rely=0.6, relwidth=1, relheight=0.4)
 
-    rules = "1. Click <PlayNext> to start the game\n2. Enter the word in the input\n3. Click <Check> for " \
-            "result\n4. Click <Replay> to reply\n5. Click <meaning> to get the word's definition"
-
-    meaning = tk.Label(frame_bottum, text=rules, bg='#affff4', wraplength=350, justify="left")
+    meaning = tk.Label(frame_bottum, text=RULES, bg='#affff4', wraplength=350, justify="left")
     meaning.place(relx=0.1, rely=0, relwidth=0.8, relheight=0.8)
 
     button_meaning = tk.Button(frame_buttum, text="Meaning", command=lambda: cmd.find_meaning(meaning))

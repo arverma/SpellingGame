@@ -2,7 +2,6 @@ from gtts import gTTS
 import json
 import pandas as pd
 import random
-from pygame import mixer
 from difflib import get_close_matches
 from tkinter import messagebox
 import playsound
@@ -42,9 +41,7 @@ class Game:
             raise Exception("Error: Playing")
 
     def replay(self):
-        mixer.init()
-        mixer.music.load('voice.mp3')
-        mixer.music.play()
+        playsound.playsound("voice.mp3")
 
     def read_the_word_from_csv(self):
         not_champion = 1
