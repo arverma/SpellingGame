@@ -1,5 +1,26 @@
 # SpellingGame
+This is a Spelling Game built to practice spelling. It is built using Python and is available to run with without GUI.  
 
+![SpellngGame UI](Image/gui.png)
+
+## Requirements
+* gtts
+* json
+* pandas
+* random
+* difflib
+* tkinter
+* playsound
+
+## To play though GUI
+* Clone the repo
+* `CD SpellingGame`
+* `python3 GUI/gui.py`
+
+## To play on Terminal
+* Clone the repo
+* `CD SpellingGame`
+* `python3 Script/main.py`
 ```
 Play: <1/0>: 1
 Playing......
@@ -18,14 +39,11 @@ transmitted :  ['To carry, particularly to a particular destination.', 'To send 
 Exit: <1/0>: 0
 ```
 
-## Requirements
-* pyttsx3
-* json
-* pandas as pd
-* random
-* difflib
+---   
+<details><summary>Want to contribute?</summary>
+<p>
 
-## To run
-* Clone the repo
-* CD SpellingGame
-* python3 main.py
+* Go through the open issues and read the description
+* Please ask any doubt in the comment section of the issues before making assumptions
+</p>
+</details>
